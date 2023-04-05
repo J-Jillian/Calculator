@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.title {
+  margin-top: -600px;
+  color: #cfa37c;
+  text-transform: uppercase;
+}
+
 *::before,
 *::after {
   box-sizing: inherit;
@@ -17,7 +23,7 @@ body {
 }
 
 body {
-  background: #10131c;
+  background: #dcbd9e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,12 +52,12 @@ button:focus {
 }
 
 .calculator {
-  background: #212532;
+  background: #ede6d4;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
   width: 325px;
-  border: 1px solid #333;
+  border: 1px solid #f4d3fb;
   padding: 0.75rem;
   border-radius: 1rem;
   position: fixed;
@@ -66,7 +72,7 @@ button:focus {
   font-size: 2rem;
   height: 6rem;
   color: #fff;
-  background: #333849;
+  background: #a8b4b3;
   text-align: end;
   padding: 0.5rem;
 }
@@ -74,8 +80,18 @@ button:focus {
 ::placeholder {
   color: #fff;
 }
+.symbol {
+  color: #a8b4b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  aspect-ratio: 1;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  transition: 0.15s ease;
+}
 
-.symbol,
 .number {
   display: flex;
   align-items: center;
@@ -89,17 +105,17 @@ button:focus {
 }
 
 .symbol {
-  background: #5d68e2;
+  background: #fdff02;
 }
 
 .symbol:hover {
-  background: #4d55b1;
+  background: #e9e972;
 }
 
 .number {
-  background: #333849;
+  background: #f4d3fb;
 }
 
 .number:hover {
-  background: #333849ac;
+  background: #dda4e8;
 }
